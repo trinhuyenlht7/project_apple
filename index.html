@@ -218,163 +218,74 @@
 
 
         </div>
-        <div>
-            <div class="dssanpham bg-dark">
-                <div class="title_dssp">
-                    <h2 class="title_sp">DANH SÁCH SẢN PHẨM</h2>
-                </div>
-                <div class="clearfix"></div>
-                <div class="sanpham">
+        <div class="dssanpham bg-dark">
+            <div class="title_dssp">
+                <h2 class="title_sp">DANH SÁCH SẢN PHẨM</h2>
+            </div>
+            <div class="clearfix"></div>
+            <div class="sanpham">
+                <div class="bg-dark sp_container">
                     <div class="loai_sp">
                         <a href="">IPHONE</a>
                     </div>
-                    <div class="row">
-                        <div class=" col-6 col-md-3 card_sp">
-                            <div class="card_body">
-                                <img src="https://placehold.co/250x300" style="width : 100%" alt="">
-                                <div class="if_sp">
-                                    <h4>Iphone 15 promax</h4>
-                                    <div class="gia_giam">
-                                        <h4>20.000.000</h4><span>vnđ</span>
-                                    </div>                                  
-                                    <div class="gia">
-                                        <p>25.000.000</p><span>vnđ</span>
-                                    </div>
-                                </div>
-                                <div class="btn_buy">
-                                    <button type="button" class="btn btn-primary">Mua</button>
-                                    <button type="button" class="btn btn-primary">Thêm</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-6 col-md-3 card_sp">
-                            <div class="card_body">
-                                <img src="https://placehold.co/250x300" style="width : 100%" alt="">
-                                <div class="if_sp">
-                                    <h4>Iphone 15 promax</h4>
-                                    <div class="gia_giam">
-                                        <h4>20.000.000</h4><span>vnđ</span>
-                                    </div>                                  
-                                    <div class="gia">
-                                        <p>25.000.000</p><span>vnđ</span>
-                                    </div>
-                                </div>
-                                <div class="btn_buy">
-                                    <button type="button" class="btn btn-primary">Mua</button>
-                                    <button type="button" class="btn btn-primary">Thêm</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-6 col-md-3 card_sp">
-                            <div class="card_body">
-                                <img src="https://placehold.co/250x300" style="width : 100%" alt="">
-                                <div class="if_sp">
-                                    <h4>Iphone 15 promax</h4>
-                                    <div class="gia_giam">
-                                        <h4>20.000.000</h4><span>vnđ</span>
-                                    </div>                                  
-                                    <div class="gia">
-                                        <p>25.000.000</p><span>vnđ</span>
-                                    </div>
-                                </div>
-                                <div class="btn_buy">
-                                    <button type="button" class="btn btn-primary">Mua</button>
-                                    <button type="button" class="btn btn-primary">Thêm</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-6 col-md-3 card_sp">
-                            <div class="card_body">
-                                <img src="https://placehold.co/250x300" style="width : 100%" alt="">
-                                <div class="if_sp">
-                                    <h4>Iphone 15 promax</h4>
-                                    <div class="gia_giam">
-                                        <h4>20.000.000</h4><span>vnđ</span>
-                                    </div>                                  
-                                    <div class="gia">
-                                        <p>25.000.000</p><span>vnđ</span>
-                                    </div>
-                                </div>
-                                <div class="btn_buy">
-                                    <button type="button" class="btn btn-primary">Mua</button>
-                                    <button type="button" class="btn btn-primary">Thêm</button>
-                                </div>
-                            </div>
+                    <div class="row ">
+                        <div class=" col-6 col-md-3 card_sp" v-for="sp in iphone">
+                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
                         </div>
                     </div>
+                </div>
 
+                <div class="bg-black sp_container">
+                    <div class="loai_sp">
+                        <a href="">MAC</a>
+                    </div>
                     <div class="row">
-                        <div class=" col-6 col-md-3 card_sp">
-                            <div class="card_body">
-                                <img src="https://placehold.co/250x300" style="width : 100%" alt="">
-                                <div class="if_sp">
-                                    <h4>Iphone 15 promax</h4>
-                                    <div class="gia_giam">
-                                        <h4>20.000.000</h4><span>vnđ</span>
-                                    </div>                                  
-                                    <div class="gia">
-                                        <p>25.000.000</p><span>vnđ</span>
-                                    </div>
-                                </div>
-                                <div class="btn_buy">
-                                    <button type="button" class="btn btn-primary">Mua</button>
-                                    <button type="button" class="btn btn-primary">Thêm</button>
-                                </div>
-                            </div>
+                        <div class=" col-6 col-md-3 card_sp" v-for="sp in mac">
+                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
                         </div>
-                        <div class=" col-6 col-md-3 card_sp">
-                            <div class="card_body">
-                                <img src="https://placehold.co/250x300" style="width : 100%" alt="">
-                                <div class="if_sp">
-                                    <h4>Iphone 15 promax</h4>
-                                    <div class="gia_giam">
-                                        <h4>20.000.000</h4><span>vnđ</span>
-                                    </div>                                  
-                                    <div class="gia">
-                                        <p>25.000.000</p><span>vnđ</span>
-                                    </div>
-                                </div>
-                                <div class="btn_buy">
-                                    <button type="button" class="btn btn-primary">Mua</button>
-                                    <button type="button" class="btn btn-primary">Thêm</button>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+
+                <div class="bg-dark sp_container">
+                    <div class="loai_sp">
+                        <a href="">IPHONE</a>
+                    </div>
+                    <div class="row ">
+                        <div class=" col-6 col-md-3 card_sp" v-for="sp in iphone">
+                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
                         </div>
-                        <div class=" col-6 col-md-3 card_sp">
-                            <div class="card_body">
-                                <img src="https://placehold.co/250x300" style="width : 100%" alt="">
-                                <div class="if_sp">
-                                    <h4>Iphone 15 promax</h4>
-                                    <div class="gia_giam">
-                                        <h4>20.000.000</h4><span>vnđ</span>
-                                    </div>                                  
-                                    <div class="gia">
-                                        <p>25.000.000</p><span>vnđ</span>
-                                    </div>
-                                </div>
-                                <div class="btn_buy">
-                                    <button type="button" class="btn btn-primary">Mua</button>
-                                    <button type="button" class="btn btn-primary">Thêm</button>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+
+                <div class="bg-black sp_container">
+                    <div class="loai_sp">
+                        <a href="">MAC</a>
+                    </div>
+                    <div class="row">
+                        <div class=" col-6 col-md-3 card_sp" v-for="sp in mac">
+                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
                         </div>
-                        <div class=" col-6 col-md-3 card_sp">
-                            <div class="card_body">
-                                <img src="https://placehold.co/250x300" style="width : 100%" alt="">
-                                <div class="if_sp">
-                                    <h4>Iphone 15 promax</h4>
-                                    <div class="gia_giam">
-                                        <h4>20.000.000</h4><span>vnđ</span>
-                                    </div>                                  
-                                    <div class="gia">
-                                        <p>25.000.000</p><span>vnđ</span>
-                                    </div>
-                                </div>
-                                <div class="btn_buy">
-                                    <button type="button" class="btn btn-primary">Mua</button>
-                                    <button type="button" class="btn btn-primary">Thêm</button>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+
+                <div class="bg-dark sp_container">
+                    <div class="loai_sp">
+                        <a href="">IPHONE</a>
+                    </div>
+                    <div class="row ">
+                        <div class=" col-6 col-md-3 card_sp" v-for="sp in iphone">
+                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-black sp_container">
+                    <div class="loai_sp">
+                        <a href="">MAC</a>
+                    </div>
+                    <div class="row">
+                        <div class=" col-6 col-md-3 card_sp" v-for="sp in mac">
+                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
                         </div>
                     </div>
                 </div>
@@ -385,7 +296,7 @@
 
     <script src="./vendor/vue.min.js"></script>
     <script src="./vendor/bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.js"></script>
-    <script src="./component/cpn_navbar.js"></script>
+    <script src="./component/cpn_cardsp.js"></script>
     <script src="./main.js"></script>
 </body>
 
