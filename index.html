@@ -43,7 +43,7 @@
             <div class="container">
                 <div class="list_product ">
                     <div class="product">
-                        <a class="product_item" href="#">MAC</a>
+                        <a class="product_item" href="#mac">MAC</a>
                         <div class="dropdown">
                             <div class="row_dropdown">
                                 <div class="column-dropdown">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="product">
-                        <a class="product_item" href="#">IPHONE</a>
+                        <a class="product_item" href="#iphone">IPHONE</a>
                         <div class="dropdown">
                             <div class="row_dropdown">
                                 <div class="column-dropdown">
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     <div class="product">
-                        <a class="product_item" href="#">IPAD</a>
+                        <a class="product_item" href="#ipad">IPAD</a>
                         <div class="dropdown">
                             <div class="row_dropdown">
                                 <div class="column-dropdown">
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                     <div class="product">
-                        <a class="product_item" href="#">APPLE WATCH</a>
+                        <a class="product_item" href="#applewatch">APPLE WATCH</a>
                         <div class="dropdown">
                             <div class="row_dropdown">
                                 <div class="column-dropdown">
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                     <div class="product">
-                        <a class="product_item" href="#">AIR POD</a>
+                        <a class="product_item" href="#airpod">AIR POD</a>
                         <div class="dropdown">
                             <div class="row_dropdown">
                                 <div class="column-dropdown">
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="product">
-                        <a class="product_item" href="#">OTHER</a>
+                        <a class="product_item" href="#orther">OTHER</a>
                         <div class="dropdown">
                             <div class="row_dropdown">
                                 <div class="column-dropdown">
@@ -224,72 +224,121 @@
             </div>
             <div class="clearfix"></div>
             <div class="sanpham">
-                <div class="bg-dark sp_container">
-                    <div class="loai_sp">
-                        <a href="">IPHONE</a>
-                    </div>
-                    <div class="row ">
-                        <div class=" col-6 col-md-3 card_sp" v-for="sp in iphone">
-                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-black sp_container">
+                <div id="mac" class=" bg-dark sp_container">
                     <div class="loai_sp">
                         <a href="">MAC</a>
                     </div>
                     <div class="row">
-                        <div class=" col-6 col-md-3 card_sp" v-for="sp in mac">
+                        <div class=" col-4 col-md-2 card_sp" v-for="sp in mac">
                             <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
                         </div>
                     </div>
                 </div>
-
-                <div class="bg-dark sp_container">
+                <div id="iphone" class="bg-black sp_container">
                     <div class="loai_sp">
-                        <a href="">IPHONE</a>
-                    </div>
-                    <div class="row ">
-                        <div class=" col-6 col-md-3 card_sp" v-for="sp in iphone">
-                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-black sp_container">
-                    <div class="loai_sp">
-                        <a href="">MAC</a>
+                        <a href="" >IPHONE</a>
                     </div>
                     <div class="row">
-                        <div class=" col-6 col-md-3 card_sp" v-for="sp in mac">
+                        <div class=" col-4 col-md-2 card_sp" v-for="sp in iphone">
                             <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
                         </div>
                     </div>
                 </div>
-
-                <div class="bg-dark sp_container">
+                <div id="ipad" class="bg-dark sp_container">
                     <div class="loai_sp">
-                        <a href="">IPHONE</a>
-                    </div>
-                    <div class="row ">
-                        <div class=" col-6 col-md-3 card_sp" v-for="sp in iphone">
-                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-black sp_container">
-                    <div class="loai_sp">
-                        <a href="">MAC</a>
+                        <a href="">IPAD</a>
                     </div>
                     <div class="row">
-                        <div class=" col-6 col-md-3 card_sp" v-for="sp in mac">
+                        <div class=" col-4 col-md-2 card_sp" v-for="sp in iphone">
+                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
+                        </div>
+                    </div>
+                </div>
+                <div id="applewatch" class="bg-black sp_container">
+                    <div class="loai_sp">
+                        <a href="">APPLE WATCH</a>
+                    </div>
+                    <div class="row">
+                        <div class=" col-4 col-md-2 card_sp" v-for="sp in mac">
+                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
+                        </div>
+                    </div>
+                </div>
+                <div id="airpod" class="bg-dark sp_container">
+                    <div class="loai_sp">
+                        <a href="">AIR POD</a>
+                    </div>
+                    <div class="row">
+                        <div class=" col-4 col-md-2 card_sp" v-for="sp in iphone">
+                            <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
+                        </div>
+                    </div>
+                </div>
+                <div id="order" class="bg-black sp_container">
+                    <div class="loai_sp">
+                        <a href="">ORTHER</a>
+                    </div>
+                    <div class="row">
+                        <div class=" col-4 col-md-2 card_sp" v-for="sp in mac">
                             <card_sp v-bind:obj="sp" v-bind:key="sp.tensp"></card_sp>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="footer bg-dark bg-opacity-75">
+            <div class="row">
+                <div class="col-6 col-md-4 mt-auto mb-auto" >
+                    <div class="nav_logo d-flex justify-content-center">
+                        <a href="#"><img src="https://placehold.co/250x75" alt="logo"></a>
+                    </div>
+                    <div class="d-flex justify-content-center mt-2">
+                        <ul style="color: #f0f0f0;">
+                            <li>
+                                <p style="color:#f0f0f0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Inventore obcaecati quo blanditiis! Magni neque</p>
+                            </li>
+                            <li>
+                                <p style="color:#f0f0f0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Inventore obcaecati quo blanditiis! Magni neque</p>
+                            </li>
+                            <li>
+                                <p style="color:#f0f0f0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Inventore obcaecati quo blanditiis! Magni neque</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 d-flex justify-content-center mt-auto mb-auto" >
+                    <ul style="color:#f0f0f0;" >
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/kid.trinh.3/">Truy cập trang fanpage</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/ruou_chuoihot/">Truy cập trang instagram</a>
+                        </li>
+                        <li>
+                            <a href="tel:+84909307108">Gọi hổ trợ : 0907307108</a>
+                        </li>
+                        <li>
+                            <a href="mailto:trinhuyen@gmail.com">gmail hổ trợ : trinhuyenlht7@@gmail.com</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.google.com/maps/place/Bida+Tr%E1%BB%8Bnh+Uy%C3%AAn/@9.4898481,106.1532116,15z/data=!4m6!3m5!1s0x31a1b5abc5cb9e87:0xf04d10620e1ba9b!8m2!3d9.4898481!4d106.1532116!16s%2Fg%2F11vzb8vcdv?entry=ttu">
+                                Link google map và thông tin khác
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center">
+                    <iframe
+                        class="mt-4 mb-4"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.216977815573!2d106.1532116!3d9.4898481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a1b5abc5cb9e87%3A0xf04d10620e1ba9b!2zQmlkYSBUcuG7i25oIFV5w6pu!5e0!3m2!1svi!2s!4v1714481427283!5m2!1svi!2s"
+                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
         </div>
     </div>
 

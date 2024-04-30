@@ -3,9 +3,9 @@ Vue.component('card_sp', {
     template: `<div class="card_body">
         <img :src="obj.hinh" style="width : 100%" alt="">
         <div class="if_sp">
-            <h4>{{obj.tensp}}</h4>
+            <h5>{{obj.tensp}}</h5>
             <div class="gia_giam">
-                <h4>{{obj.giadagiam}}</h4><span>vnđ</span>
+                <h5>{{obj.giadagiam}}</h5><span>vnđ</span>
             </div>                                  
             <div class="gia">
                 <p>{{obj.giachuagiam}}</p><span>vnđ</span>
@@ -24,61 +24,61 @@ var vm = new Vue({
     data: {
         iphone: [
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'Iphone 11 promax',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'Iphone 12 promax',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'Iphone 13 promax',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'Iphone 14 promax',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },{
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'Iphone 15 promax',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'Iphone 16 promax',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'Iphone 17 promax',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'Iphone 18 promax',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'Iphone 19 promax',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'Iphone 20 promax',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
@@ -87,25 +87,25 @@ var vm = new Vue({
 
         mac : [
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'MACBOOK PRO',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'MACBOOK PRO',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'MACBOOK PRO',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
             },
             {
-                hinh: 'https://placehold.co/250x300',
+                hinh: 'https://placehold.co/200x200',
                 tensp: 'MACBOOK PRO',
                 giadagiam : '19.000.000',
                 giachuagiam : '30.000.000'
@@ -113,7 +113,7 @@ var vm = new Vue({
         ]
     },
     method: {
-
+        
     }
 
 }
